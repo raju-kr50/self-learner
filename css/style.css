@@ -1,0 +1,53 @@
+.image_logo{
+  width: 150px;
+  height: 60px;
+}
+.input_size{
+  padding-top: 50px;
+  margin-top: 30px;
+}
+.carouselslide{
+  margin-top: 90px;
+}
+.jumbotronspace{
+margin-top: 5px;
+padding: px;
+}
+.login{
+  text-align: center;
+}
+.imageresize{
+  width: 300px;
+  height: 170px;
+}
+.footer1{
+  background-color: rgb(0, 0, 0);
+  margin-top: 200px;
+}
+.map-container-3{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  }
+  .map-container-3 iframe{
+  left:0;
+  top:0;
+  height:50% !important;
+  width:50% !important;
+  position:absolute;
+  display: inline-block;
+  }
+  
+footer{
+  background-color: black;
+}
+.socialmedia{
+  margin-left: 20px;
+}
+.footersize{
+height: 200px;
+}
+h5{
+  color: white;
+}
