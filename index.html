@@ -21,7 +21,7 @@
               <span class="navbar-toggler-icon"></span>
             </button>
           
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse mb-1" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -63,11 +63,11 @@
             </div>
           </nav>
     </div> <!--end container-fluid 1-->
-
+<hr>
 <!--start container-fluid 2-->
     
     <div class="container-fluid carouselslide">
-        <div class="row">
+        <div class="row mb-3">
             <div class="col-sm-9">
                 <!--Carousel code starts-->
 
@@ -80,21 +80,21 @@
                       </ol>
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="img/1.jpg" class="d-block w-100" alt="...">
+                          <img src="img/1.jpg" class="d-block w-100" alt="..." style="height: 282px; width: 738px">
                           <div class="carousel-caption d-none d-md-block">
                             <h5>First slide label</h5>
                             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                           </div>
                         </div>
                         <div class="carousel-item">
-                          <img src="img/2.jpg" class="d-block w-100" alt="...">
+                          <img src="img/2.jpg" class="d-block w-100" alt="..." style="height: 282px; width: 738px">
                           <div class="carousel-caption d-none d-md-block">
                             <h5>Second slide label</h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                           </div>
                         </div>
                         <div class="carousel-item">
-                          <img src="img/3.jpg" class="d-block w-100" alt="...">
+                          <img src="img/3.jpg" class="d-block w-100" alt="..." style="height: 282px; width: 738px">
                           <div class="carousel-caption d-none d-md-block">
                             <h5>Third slide label</h5>
                             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -140,12 +140,12 @@
         </div><!--end row-->
 
     </div> <!--end container-fluid 2-->
-
+<hr>
  <!--Container-fluid 3-Jumbotron-->   
-
+    <section>
     <div class="container-fluid jumbotronspace"> <!--for top margin-->
 
-        <div class="jumbotron">
+        <div class="jumbotron mb-3">
             <h1 class="display-5">Welcome to Self Learner: <small>For Better Understanding</small></h1>
               <p class="lead">Self Learner provides you with the tutorials for the full stack developer from the basic to the advanced level. </p>
               <hr class="my-4">
@@ -154,82 +154,112 @@
         </div>
 
     </div><!--end container-fluid 3-Jumbotron-->
-
+  </section>
+<hr>
+  <section>
     <div class="container">
-      <div class="row">
+      <div class="row mb-5 text-center">
          <div class="col-sm-4">
-            <img src="img/web_development.jpeg" alt="Web Development" style="height: 170px; width: 300px">
+          <div class="card" style="width:350px">
+            <img class="card-img-top" src="img/programming_lang.jpeg" alt="Card image" style="width: 350px; height: 190px">
+            <div class="card-body">
+              <h4 class="card-title text-center">Programming</h4>
+             <!-- <p class="card-text text-center">Some example text.</p>  -->
+              <a href="#" class="btn btn-primary">Know more</a>
+            </div>
+          </div>
+         </div>
+         <div class="col-sm-4 ">
+          <div class="card" style="width:350px">
+            <img class="card-img-top" src="img/database.jpeg" alt="Card image" style="width: 350px; height: 190px">
+            <div class="card-body">
+              <h4 class="card-title text-center">Database</h4>
+             <!-- <p class="card-text text-center">Some example text.</p>  -->
+              <a href="#" class="btn btn-primary">Know more</a>
+            </div>
+          </div>
          </div>
          <div class="col-sm-4">
-            <img src="img/programming_lang.jpeg" alt="Programming Languages"style="height: 170px; width: 300px">
-         </div>
-         <div class="col-sm-4">
-            <img src="img/database.jpeg" alt="Databases" style="height: 170px; width: 300px">
+          <div class="card" style="width:350px ">
+            <img class="card-img-top" src="img/web_development.jpeg" alt="Card image" style="width: 350px; height: 190px">
+            <div class="card-body">
+              <h4 class="card-title text-center" >Web Development</h4>
+             <!-- <p class="card-text text-center">Some example text.</p>  -->
+              <a href="#" class="btn btn-primary ">Know more</a>
+            </div>
+          </div>
          </div>
 
       </div><!--end row-->
 
     </div><!--end container-->
 
-    
+  </section>  
+
+  <hr>
+
+  <section class="bg-primary mb-5"><!--modal start-->
+
+    <article class="py-5">
+      <div class="text-center text-white">
+        <h3 class="display-4">Want To Join</h3>
+        <p>If you want to join our team, register now!</p>
+        <button class="btn btn-warning" data-toggle="modal" data-target="#myModal">Register now</button>
+      </div>
+
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Register</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          
+          <!-- Modal body -->
+          <div class="modal-body">
+            
+              <form action="/action_page.php">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="name" class="form-control" id="name" placeholder="Enter your name">
+                  </div>
+                <div class="form-group">
+                  <label for="email">Email address:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Create password:</label>
+                  <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                </div>
+                <div class="form-group">
+                    <label for="contact">Contact number:</label>
+                    <input type="contact" class="form-control" id="contact" placeholder="Enter your contact number">
+                  </div>
+                
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+
+          </div>
+          
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    </article>
+
+  </section><!--modal end-->
    
                   <!-- Footer -->
 <footer class="page-footer font-small blue pt-4">
-
-    <!-- Footer Links -->
-    <div class="container-fluid text-center text-md-left footersize">
-  
-      <!-- Grid row -->
-      <div class="row">
-  
-        <!-- Grid column -->
-        <div class="col-md-6 mt-md-0 mt-3">
-  
-          <!-- Content -->
-          <h5 class="text-uppercase" font-color="white">Google Map</h5>
-          <!--Google map-->
-<div id="map-container-google-3" class="z-depth-1-half map-container-3 p-0">
-    <iframe src="https://maps.google.com/maps?q=warsaw&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-      style="border:0"  width="50px"; height="50px"></iframe>
-  </div>
-        </div>
-        
-        <!-- Grid column -->
-          
-        <hr class="clearfix w-100 d-md-none pb-3">
-  
-        <!-- Grid column -->
-        <div class="col-md-3 mb-md-0 mb-3 mt-5">
-  
-          <!-- Links -->
-            
-          <ul class="list-unstyled ">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Partners</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-          </ul>
-  
-        </div>
-        <!-- Grid column -->
-  
-        <!-- Grid column -->
-        <div class="col-md-3 mb-md-0 mb-3 mt-5">
-          <ul class="list-unstyled">
-            <li><a href="#">Web Designing</a></li>
-            <li><a href="#">WEB development</a></li>
-            <li><a href="#">Programming Languages</a></li>
-            <li><a href="#">Databases</a></li>
-          </ul>
-  
-        </div>
-        <!-- Grid column -->
-  
-      </div>
-      <!-- Grid row -->
-  
-    </div>
-    <!-- Footer Links -->
   
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3" style=" color: white">© 2018 Copyright:
